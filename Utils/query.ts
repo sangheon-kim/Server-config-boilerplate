@@ -63,6 +63,4 @@ class Query {
   }
 }
 
-class SubQuery extends Query {}
-
 export default Query;
