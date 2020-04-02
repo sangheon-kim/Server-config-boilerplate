@@ -6,15 +6,16 @@ class AuthService {
   }
 
   public selectInfo(params: any, callback: any) {
-    const QueryClass = new Query(
-      params.body.column,
-      params.body.table,
-      params.body.condition
-    );
+    let column: any;
+    let table = "";
+    let condition: any;
+
+    table = params.body.name;
+
+    const QueryClass = new Query(column, table, condition);
     let sql = QueryClass.Select();
 
     params.dbPool.query(sql, (err: any, results: any) => {
-      console.log(sql);
       if (err) {
         callback(err, params);
         return;

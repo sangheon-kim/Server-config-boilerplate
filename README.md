@@ -31,4 +31,16 @@
 - Rest API can be used as GraphQL. (REST API를 GraphQL 처럼 사용도 가능합니다)
 - As a result, the number of APIs will be reduced.(따라서 API 개수는 줄어들 것입니다.)
 
+## Version Management
+
+### v 1.0.0
+
+- [x] init configuration
+
+### v 1.1.0
+
+- [x] Change Query Request Method
+- [x] Change Query Processing (for Security)
+- [x] Example http Test File (Please Install REST Client of VS Code Extension )
+
 ## Happy Hacking!

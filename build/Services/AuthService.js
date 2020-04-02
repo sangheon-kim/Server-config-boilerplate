@@ -9,10 +9,14 @@ var AuthService = /** @class */ (function () {
         this.selectInfo = this.selectInfo.bind(this);
     }
     AuthService.prototype.selectInfo = function (params, callback) {
-        var QueryClass = new query_1.default(params.body.column, params.body.table, params.body.condition);
+        var column;
+        var table = "";
+        var condition;
+        table = params.body.name;
+        var QueryClass = new query_1.default(column, table, condition);
         var sql = QueryClass.Select();
+        console.log(sql);
         params.dbPool.query(sql, function (err, results) {
-            console.log(sql);
             if (err) {
                 callback(err, params);
                 return;

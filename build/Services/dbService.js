@@ -19,17 +19,11 @@ var DBService = /** @class */ (function () {
     }
     DBService.prototype.connect = function (params, callback) {
         console.log("connect");
+        console.log(params.body);
         if (params.dbPool) {
             callback(null, params);
             return;
         }
-        // const config: any = {
-        //   connectionLimit: 1,
-        //   user: "root",
-        //   password: process.env.DB_PASSWORD,
-        //   host: process.env.DB_ADDRESS,
-        //   database: "hybridApp_Dev"
-        // };
         var config2 = {
             user: "root",
             password: "JxEbk7ir2mB4bKN9",

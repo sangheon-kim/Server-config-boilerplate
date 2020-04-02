@@ -17,12 +17,11 @@ class DBService {
 
   public connect(params: any, callback: any) {
     console.log("connect");
+    console.log(params.body);
     if (params.dbPool) {
       callback(null, params);
       return;
     }
-
-
 
     const config2: any = {
       user: "root",
