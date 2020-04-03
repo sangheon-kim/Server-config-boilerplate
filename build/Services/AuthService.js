@@ -15,7 +15,6 @@ var AuthService = /** @class */ (function () {
         table = params.body.name;
         var QueryClass = new query_1.default(column, table, condition);
         var sql = QueryClass.Select();
-        console.log(sql);
         params.dbPool.query(sql, function (err, results) {
             if (err) {
                 callback(err, params);

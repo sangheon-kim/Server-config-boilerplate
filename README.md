@@ -33,14 +33,15 @@
 
 ## Version Management
 
-### v 1.0.0
+### v 1.0.0 (20200331)
 
 - [x] init configuration
 
-### v 1.1.0
+### v 1.1.0 (20200403)
 
 - [x] Change Query Request Method
 - [x] Change Query Processing (for Security)
 - [x] Example http Test File (Please Install REST Client of VS Code Extension )
+- [x] add ts-node (Hot reload)
 
 ## Happy Hacking!

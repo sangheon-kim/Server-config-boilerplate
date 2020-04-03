@@ -7,6 +7,6 @@ dotenv.config();
 const PORT: number | undefined | string = process.env.PORT;
 
 const handleListening: () => void = () =>
-  console.log(`✅ Listening on: http://localhost:${PORT}`);
+  console.log(`✅Listening on: http://localhost:${PORT}`);
 
 app.listen(PORT, handleListening);
